@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-seoflix/static/css/main.12fa8f86.css",
+    "main.js": "/react-seoflix/static/js/main.9e3e7882.js",
+    "index.html": "/react-seoflix/index.html",
+    "main.12fa8f86.css.map": "/react-seoflix/static/css/main.12fa8f86.css.map",
+    "main.9e3e7882.js.map": "/react-seoflix/static/js/main.9e3e7882.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12fa8f86.css",
+    "static/js/main.9e3e7882.js"
+  ]
+}
