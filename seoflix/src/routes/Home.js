@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Movie from '../components/Movie';
+import SwiperModule from '../components/SwiperModule';
 import styles from './Home.module.css';
 
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
                     ) :
                     (
                         <div>
+                            <SwiperModule />
                             <div className={styles.movies}>
                                 {
                                     movies.map((movie) => (
