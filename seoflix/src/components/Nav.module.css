@@ -64,12 +64,6 @@
     color: var(--grey);
 }
 
-.head__search {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
 .head__search input {
     padding: 1rem;
     border: 2px solid var(--grey);
@@ -78,8 +72,9 @@
     color: #fff;
     transition: border-color .4s;
 }
-
 .head__search input:focus {border-color: #fff;}
+
+.head__search a {margin-left: 1rem;}
 
 .fa-magnifying-glass {
     width: 2.5rem;

@@ -8,19 +8,76 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    margin-top: -80px;
-    font-size: 50px;
+    margin-top: -8rem;
+    font-size: 5rem;
     font-weight: 300;
+    color: #fff;
+}
+
+.recomm__movie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.recomm__movie__txt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 40%;
+    padding: 0 0 10rem 5rem;
+}
+.recomm__movie__title {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.recomm__movie__descript {
+    font-size: 2rem;
+    color: #fff;
+}
+.recomm__movie__btnBox {
+    margin-top: 2rem;
+}
+.recomm__movie__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2.5rem;
+    background-color: rgba(109, 109, 110, 0.7);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+}
+.recomm__movie__btn:hover {background-color: rgba(109, 109, 110, 0.4);}
+
+.type__list__movies {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 5rem;
+}
+.type__module__movies {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.type__module__movies__tit {
+    font-size: 1.4rem;
     color: #fff;
 }
 
 .movies {
     display: grid;
     grid-template-columns: repeat(2, minmax(400px, 1fr));
-    grid-gap: 100px;
-    padding: 50px;
+    grid-gap: 10rem;
+    padding: 5rem;
     width: 80%;
-    padding-top: 70px;
+    padding-top: 7rem;
 }
 
 @media screen and (max-width: 1090px) {
