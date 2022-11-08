@@ -12,9 +12,11 @@ function App() {
     return (
         <RecoilRoot>
             <Router basename={process.env.PUBLIC_URL}>
-                {/* <Nav /> */}
+                <Nav />
                 <Routes>
                     <Route path={"/"} element={<Home />} />
+                    {/* <Route path={`/:group/:page`} element={<Group />} />
+                    <Route path={`/search/:search`} element={<Search />} /> */}
                     <Route path={`/movie/:id`} element={<Detail />} />
                 </Routes>
             </Router>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Group_obj, Group_key_arr } from "../atom/NavList";
 
-import styles from './Nav.module.css';
+import styles from '../assets/css/module/Nav.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,7 +10,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
  * Header Navigation
  */
 function Nav() {
-    const [search, setSearch] = useState(null);
+    const [search, setSearch] = useState('');
     const searchClick = (event) => {
         setSearch(event.target.value)
     }
