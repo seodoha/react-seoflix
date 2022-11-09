@@ -1,25 +1,30 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import { Group_obj, Group_key_arr } from "../atom/NavList";
+import { listPageReLoading, focusNav } from "../atom/Atoms";
 
 import styles from '../assets/css/module/Nav.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-/**
- * Header Navigation
- */
 function Nav() {
     const [search, setSearch] = useState('');
+    const pageReLoading = useSetRecoilState(listPageReLoading);
+    const [focusPath, setFocusPath] = useRecoilState(focusNav);
+
     const searchClick = (event) => {
         setSearch(event.target.value)
+    }
+    const optionOnClick = () => {
+        pageReLoading(true);
     }
 
     return (
         <div>
             <nav className={styles.header}>
                 <h1 className={styles.logo}>
-                    <Link to="/">
+                    <Link to="/" onClick={() => setFocusPath("")}>
                         <strong>SEOFLIX</strong>
                         <strong>SEOFLIX</strong>
                     </Link>
@@ -29,7 +34,13 @@ function Nav() {
                         Group_key_arr.map((key)=>{
                             return (
                                 <li key={key}>
-                                    <Link to={`/page/${Group_obj[key]}/1`}>{key}</Link>
+                                    <Link
+                                        to={`/${Group_obj[key]}/1`}
+                                        onClick={focusPath !== Group_obj[key] ? optionOnClick : null}
+                                        style={focusPath !== Group_obj[key] ? null : {
+                                            color: "#e50914"
+                                        }}
+                                    >{key}</Link>
                                 </li>
                             );
                         })

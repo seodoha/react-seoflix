@@ -5,6 +5,7 @@ import {
  } from "react-router-dom";
  import { RecoilRoot } from 'recoil';
  import Home from "./routes/Home";
+ import Group from "./routes/Group";
  import Detail from "./routes/Detail";
  import Nav from "./components/Nav";
 
@@ -15,8 +16,8 @@ function App() {
                 <Nav />
                 <Routes>
                     <Route path={"/"} element={<Home />} />
-                    {/* <Route path={`/:group/:page`} element={<Group />} />
-                    <Route path={`/search/:search`} element={<Search />} /> */}
+                    <Route path={`/:group/:page`} element={<Group />} />
+                    {/* <Route path={`/search/:search`} element={<Search />} /> */}
                     <Route path={`/movie/:id`} element={<Detail />} />
                 </Routes>
             </Router>

@@ -4,19 +4,25 @@ import styles from "../assets/css/module/Movie.module.css";
 
 function Movie({id, coverImg, title, year, summary, genres}) {
     return (
-        <div className={styles.movie}>
-            <img src={coverImg} alt={title} className={styles.movie__img} />
-            <h2 className={styles.movie__title}>
-                <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link>
-            </h2>
-            <h3 className={styles.movie__year}>{year}</h3>
-            <p>{summary.length > 235 ? `${summary.slice(0, 235)}...`: summary}</p>
-            <ul className={styles.movie__genres}>
+        <Link
+            to={`/movie/${id}`}
+            className={styles.group__container__movie}
+        >
+            <img
+                src={coverImg}
+                alt={title}
+            />
+            <div className={styles.group__container__movie__info}>
+                <strong className={styles.group__container__movie__info__tit}>{title}</strong>
+                <span className={styles.group__container__movie__info__year}>{year}</span>
+                <p className={styles.group__container__movie__info__desc}>{summary.length > 200 ? `${summary.slice(0, 100)}...`: summary}</p>
+                <ul className={styles.group__container__movie__info__genres}>
                 {
                     genres.map(g => <li key={g}>{g}</li>)
                 }
-            </ul>
-        </div>
+                </ul>
+            </div>
+        </Link>
     )
 }
 
