@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-left: -5rem;
+    margin-left: -15rem;
 }
 .nav__list li a {
     font-size: 1.4rem;

@@ -46,7 +46,8 @@ function Nav() {
                         })
                     }
                 </ul>
-                <div className={styles.head__search}>
+                <div></div>
+                {/* <div className={styles.head__search}>
                     <form>
                         <input
                             type="text"
@@ -67,7 +68,7 @@ function Nav() {
                             </button>
                         </Link>
                     </form>
-                </div>
+                </div> */}
             </nav>
         </div>
     );

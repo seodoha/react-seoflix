@@ -18,8 +18,6 @@ function Detail() {
         })
     }, []);
 
-    console.log(movie);
-
     return (
         <div>
             {loading ? <Loading /> :
@@ -36,7 +34,27 @@ function Detail() {
                                 alt={movie.title}
                                 className={styles.detail__container__info__thumb}
                             />
-
+                            <div className={styles.detail__container__info__txtBox}>
+                                <h2 className={styles.detail__container__info__txtBox__tit}>{movie.title}</h2>
+                                <span className={styles.detail__container__info__txtBox__year}>{movie.year}</span>
+                                <p className={styles.detail__container__info__txtBox__summary}>{movie.description_full}</p>
+                                <ul className={styles.detail__container__info__txtBox__genres}>
+                                    {
+                                        movie.genres.map(genre => <li key={genre}>{genre}</li>)
+                                    }
+                                </ul>
+                                <div className={styles.detail__container__info__txtBox__torrents}>
+                                    {
+                                        movie.torrents.map(({url}, i) => (
+                                            <a
+                                                key={i}
+                                                href={url}
+                                            >
+                                                {`Torrent ${i+1}`}</a>
+                                        ))
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 )

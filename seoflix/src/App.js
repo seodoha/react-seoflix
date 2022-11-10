@@ -7,6 +7,7 @@ import {
  import Home from "./routes/Home";
  import Group from "./routes/Group";
  import Detail from "./routes/Detail";
+ import Search from "./routes/Search";
  import Nav from "./components/Nav";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
                 <Routes>
                     <Route path={"/"} element={<Home />} />
                     <Route path={`/:group/:page`} element={<Group />} />
-                    {/* <Route path={`/search/:search`} element={<Search />} /> */}
+                    <Route path={`/search/:search`} element={<Search />} />
                     <Route path={`/movie/:id`} element={<Detail />} />
                 </Routes>
             </Router>

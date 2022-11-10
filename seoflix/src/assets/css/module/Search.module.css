@@ -1,0 +1,30 @@
+.group__container {
+    padding: 20rem 6rem 10rem;
+}
+.group__container__movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15rem 6rem;
+}
+.page__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.page__list li a {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #b3b3b3;
+    transition: .3s;
+}
+.page__list li a:hover,
+.page__list li .page__list__active {
+    color: #fff;
+}
+.empty_search {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}

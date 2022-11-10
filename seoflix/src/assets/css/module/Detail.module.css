@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 100vh;
 }
 .detail__container__bg {
     position: fixed;
@@ -12,9 +13,57 @@
 }
 .detail__container__info {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+    width: 90rem;
+    z-index: 1;
 }
 .detail__container__info__thumb {
     flex-shrink: 0;
     width: 23rem;
+}
+.detail__container__info__txtBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.detail__container__info__txtBox__tit {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+.detail__container__info__txtBox__year {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+}
+.detail__container__info__txtBox__summary {
+    margin: 3rem 0 2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #fff;
+}
+.detail__container__info__txtBox__genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+.detail__container__info__txtBox__genres li {
+    padding: 0.3rem 0.6rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.detail__container__info__txtBox__torrents {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.detail__container__info__txtBox__torrents a {
+    padding: 1rem 1.3rem;
+    font-size: 1.8rem;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: .3s;
 }
