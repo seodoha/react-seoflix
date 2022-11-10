@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/react-seoflix/static/css/main.12fa8f86.css",
-    "main.js": "/react-seoflix/static/js/main.9e3e7882.js",
+    "main.css": "/react-seoflix/static/css/main.c75f0093.css",
+    "main.js": "/react-seoflix/static/js/main.074dd207.js",
+    "static/media/NetflixSans-Bold.otf": "/react-seoflix/static/media/NetflixSans-Bold.f61f7a737cfe2b1350b3.otf",
+    "static/media/NetflixSans-Medium.otf": "/react-seoflix/static/media/NetflixSans-Medium.afa70b1616563bbc985d.otf",
+    "static/media/NetflixSans-Regular.otf": "/react-seoflix/static/media/NetflixSans-Regular.34b07abc629b899d2ec0.otf",
+    "static/media/NetflixSans-Light.otf": "/react-seoflix/static/media/NetflixSans-Light.94a8f7dbe7e126ebe18a.otf",
     "index.html": "/react-seoflix/index.html",
-    "main.12fa8f86.css.map": "/react-seoflix/static/css/main.12fa8f86.css.map",
-    "main.9e3e7882.js.map": "/react-seoflix/static/js/main.9e3e7882.js.map"
+    "main.c75f0093.css.map": "/react-seoflix/static/css/main.c75f0093.css.map",
+    "main.074dd207.js.map": "/react-seoflix/static/js/main.074dd207.js.map"
   },
   "entrypoints": [
-    "static/css/main.12fa8f86.css",
-    "static/js/main.9e3e7882.js"
+    "static/css/main.c75f0093.css",
+    "static/js/main.074dd207.js"
   ]
 }
